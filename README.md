@@ -1,7 +1,7 @@
 angular-income
 =============
 
-Simple custom income input directives for angular js >= 1.2.
+Simple custom income input directives for angular js >= 1.2. ( [Demo](http://embed.plnkr.co/THnIOl/preview) )
 
 ## Install
 
