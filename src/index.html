@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html ng-app="app">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>angular income</title>
+
+    <script src="../angular/angular.js"></script>
+    <script src="angular-income.js"></script>
+
+    <script src="app.js"></script>
+
+    <style>
+      .container {
+        border: solid black 2px;
+        margin: 100px auto;
+        padding: 20px;
+      }
+
+    </style>
+
+  </head>
+
+  <body ng-controller="AppCtrl">
+    <div class="container">
+      <h4>What's your yearly household income?</h4>
+      <label>&#36;</label>
+      <input type="text"
+        dy-income="handler($event)"
+        dy-value="{{income}}"
+        dy-max-length="8" />
+
+      <p>Income: &#36;{{ income }}</p>
+      <p>Income with comma: &#36;{{ incomeWithComma }}</p>
+    </div>
+  </body>
+
+</html>

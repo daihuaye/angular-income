@@ -1,0 +1,33 @@
+{
+  "name": "angular-income",
+  "description": "Simple income input directive for angular js",
+  "version": "0.0.1",
+  "authors": [
+    "daihua ye <daihua.ye@gmail.com>"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "income",
+    "custome input",
+    "angularjs",
+    "angular",
+    "directive"
+  ],
+  "main": "./dist/angular-income.js",
+  "dependencies": {
+    "angular": "~1.2.x"
+  },
+  "ignore": [
+    ".jshintrc",
+    "Gruntfile.js",
+    "package.json",
+    "src"
+  ],
+  "devDependencies": {},
+  "private": false,
+  "license": "MIT"
+}
