@@ -1,6 +1,6 @@
 {
-  "name": "angular-swipe",
-  "version": "0.0.7",
+  "name": "angular-income",
+  "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",

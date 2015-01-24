@@ -9,7 +9,7 @@ Simple custom income input directives for angular js >= 1.2. ( [Demo](http://emb
 
 >
 ``` JavaScript
-"angular-income": "~0.0.1"
+"angular-income": "~1.0.0"
 ```
 
 + Include the required source file (this path or similar)
