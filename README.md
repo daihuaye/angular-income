@@ -65,4 +65,4 @@ app.controller('AppCtrl', function AppCtrl($scope) {
 
 ## Copyright & License
 
-Released under the [MIT license](LICENSE).
+Released under the [MIT license](LICENSE.txt).
