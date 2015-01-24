@@ -5,10 +5,10 @@
   "authors": [
     "daihua ye <daihua.ye@gmail.com>"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/daihuaye/angular-income",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/daihuaye/angular-income"
   },
   "keywords": [
     "income",
@@ -17,7 +17,7 @@
     "angular",
     "directive"
   ],
-  "main": "./dist/angular-income.js",
+  "main": "./dist/angular-income.min.js",
   "dependencies": {
     "angular": "~1.2.x"
   },
