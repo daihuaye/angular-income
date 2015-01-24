@@ -62,3 +62,5 @@ app.controller('AppCtrl', function AppCtrl($scope) {
   };
 })
 ```
+
+## LICENSE: MIT
