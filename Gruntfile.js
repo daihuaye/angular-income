@@ -91,7 +91,7 @@ module.exports = function (grunt) {
                     cwd: '<%= yeoman.app %>',
                     dest: '<%= yeoman.dist %>',
                     src: [
-                        'angular-swipe.js'
+                        'angular-income.js'
                     ]
                 }]
             }

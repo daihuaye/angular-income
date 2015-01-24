@@ -1,7 +1,7 @@
 {
   "name": "angular-income",
   "description": "Simple income input directive for angular js",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "authors": [
     "daihua ye <daihua.ye@gmail.com>"
   ],
