@@ -47,7 +47,7 @@ angular.module('app', ['dy.income']);
 |------------|----------------|---|
 | `dy-income="{callbackHandler(event)}"` | **dy-income** is the main directive. `callbackHandler` is to receive data when data is populated. `event.val` return string value with comma, `event.value` return integer value without comma | |
 | `dy-value={{income}}` | **dy-value** is a data-attribute to pass defalut income value to directive | default: **empty string** |
-| `dy-max-length={{number}}` | **dy-value** is a data-attribute to pass defalut length of directive | default: **8** |
+| `dy-max-length={{number}}` | **dy-value** is a data-attribute to pass defalut length of income to directive | default: **8** |
 
 >
 ```html
