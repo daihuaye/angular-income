@@ -45,7 +45,7 @@ angular.module('app', ['angular.income']);
 |------------|----------------|---|
 | `angular-income="{callbackHandler(event)}"` | **angular-income** is the main directive. `callbackHandler` is to receive data when data is populated. `event.val` return string value with comma, `event.value` return integer value without comma | |
 | `ai-value="{{income}}"` | **ai-value** is a data-attribute to pass income value to directive | default: **empty string** |
-| `ai-max-length="{{number}}"` | **ai-value** is a data-attribute to pass max length of income can be inputed | default: **8** |
+| `ai-max-length="{{number}}"` | **ai-value** is a data-attribute to pass max length of income can be inputed | default: **10** |
 
 ## Example
 
