@@ -23,7 +23,7 @@ Simple custom income input directives for angular js >= 1.3. ( [Demo](http://emb
 
 >
 ``` JavaScript
-angular.module('app', ['dy.income']);
+angular.module('app', ['angular.income']);
 ```
 
 ## Usage
