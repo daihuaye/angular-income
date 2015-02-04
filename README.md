@@ -53,9 +53,9 @@ angular.module('app', ['angular.income']);
 ```html
 <div class="page" ng-controller="AppCtrl">
 	<input type="text"
-        dy-income="handler($event)"
-        dy-value="{{income}}"
-        dy-max-length="8" />
+        angular-income="handler($event)"
+        ai-value="{{income}}"
+        ai-max-length="8" />
 </div>
 ```
 
