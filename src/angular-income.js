@@ -2,12 +2,12 @@
     'use strict';
 
     angular
-        .module('dy.income', [])
-        .factory('dy.income.service', incomeService)
-        .directive('dyIncome', dyIncomeDirective);
+        .module('angular.income', [])
+        .factory('angular.income.service', incomeService)
+        .directive('angularIncome', angularIncomeDirective);
 
     incomeService.$inject = [];
-    dyIncomeDirective.$inject = ['dy.income.service', '$parse'];
+    angularIncomeDirective.$inject = ['angular.income.service', '$parse'];
 
     function incomeService() {
         var service = {
@@ -79,7 +79,7 @@
         }
     }
 
-    function dyIncomeDirective(incomeService, $parse) {
+    function angularIncomeDirective(incomeService, $parse) {
         var directive = {
             link: link
         };
@@ -89,16 +89,16 @@
         ///////////
 
         function link(scope, element, attr) {
-            var incomeHandler = $parse(attr['dyIncome']),
+            var incomeHandler = $parse(attr['angularIncome']),
                 maxLength = 10,
                 defaultValue = '';
 
-            if (attr['dyMaxLength'] && attr['dyMaxLength'].length > 0) {
-                maxLength = parseInt(attr['dyMaxLength'], 10);
+            if (attr['aiMaxLength'] && attr['aiMaxLength'].length > 0) {
+                maxLength = parseInt(attr['aiMaxLength'], 10);
             }
 
-            if (attr['dyValue'] && attr['dyValue'].length > 0) {
-                defaultValue = attr['dyValue'];
+            if (attr['aiValue'] && attr['aiValue'].length > 0) {
+                defaultValue = attr['aiValue'];
                 element.val(incomeService.addCommas(defaultValue));
             }
 

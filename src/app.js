@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', [ 'dy.income' ]);
+var app = angular.module('app', [ 'angular.income' ]);
 
 app.controller('AppCtrl', function AppCtrl($scope) {
   $scope.income = '123456';
