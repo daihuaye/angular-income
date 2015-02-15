@@ -1,7 +1,7 @@
 {
   "name": "angular-income",
   "description": "Simple income input directive for angular js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     "daihua ye <daihua.ye@gmail.com>"
   ],
@@ -19,7 +19,7 @@
   ],
   "main": "./dist/angular-income.min.js",
   "dependencies": {
-    "angular": "~1.3.x"
+    "angular": ">= 1.2.x"
   },
   "ignore": [
     ".jshintrc",
