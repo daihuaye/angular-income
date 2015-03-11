@@ -7,21 +7,18 @@ Simple custom income input directives for angular js >= 1.3. ( [Demo](http://emb
 
 + Add this line to your *bower.json* dependencies and run *bower install* afterwards.
 
->
 ``` JavaScript
 "angular-income": "~1.0.2"
 ```
 
 + Include the required source file (this path or similar)
 
->
 ``` html
 <script src="bower_components/dist/angular-income.min.js"></script>
 ```
 
 + Inject the `angular.income` module into your app.
 
->
 ``` JavaScript
 angular.module('app', ['angular.income']);
 ```
