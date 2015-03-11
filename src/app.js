@@ -10,4 +10,8 @@ app.controller('AppCtrl', function AppCtrl($scope) {
     $scope.incomeWithComma = event.val;
     $scope.income = event.value;
   };
+
+  $scope.errorHandler = function(data) {
+    console.log(data);
+  }
 });

@@ -90,6 +90,7 @@
 
         function link(scope, element, attr) {
             var incomeHandler = $parse(attr['angularIncome']),
+                aiError = $parse(attr['aiError']),
                 maxLength = 10,
                 defaultValue = '';
 
@@ -105,11 +106,18 @@
             incomeService.bind(element, {
                 'keydown': function(event) {
                     if (!incomeService.specialKeys(event)) {
+                        var eleValue = element.val(),
+                            curValue = eleValue.replace(/[^0-9]/g, "");
                         // not press special keys
-                        if (element.val().replace(/[^0-9]/g, "").length >= maxLength || !incomeService.numberOnly(event)) {
+                        if (curValue.length >= maxLength) {
                             // either greater than max length or not a number then prevent default.
-                            event.preventDefault();
+                            aiError(scope, { data: { type: 'maxLength', value:  eleValue, keyCode: event.keyCode} });
+                        } else if (!incomeService.numberOnly(event)) {
+                            aiError(scope, { data: { type: 'NaN', value:  eleValue,  keyCode: event.keyCode} });
+                        } else {
+                            return;
                         }
+                        event.preventDefault();
                     }
                 },
                 'keyup': function(event) {
