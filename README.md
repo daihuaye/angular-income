@@ -62,7 +62,6 @@ app.controller('AppCtrl', function AppCtrl($scope) {
     console.log(event.val); // show value with comma
     console.log(event.value); // show integer value
   };
-
   $scope.errorHandler = function(data) {
     console.log(data.type); // show the error type: either maxLength or NaN
     console.log(data.value); // current value
