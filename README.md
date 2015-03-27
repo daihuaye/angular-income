@@ -47,14 +47,14 @@ angular.module('app', ['angular.income']);
 
 ## Example
 
->
+
 ```html
 <div class="page" ng-controller="AppCtrl">
 	<input type="text" angular-income="handler($event)" ai-error="errorHandler(data)"/>
 </div>
 ```
 
->
+
 ```JavaScript
 var app = angular.module('app', [ 'angular.income' ]);
 app.controller('AppCtrl', function AppCtrl($scope) {
